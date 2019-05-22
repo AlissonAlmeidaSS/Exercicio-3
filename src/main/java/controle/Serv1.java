@@ -23,11 +23,11 @@ public class Serv1 extends HttpServlet {
             req.getServletContext().setAttribute("Interações", interacoes);
 
             System.out.println("Quantidade de  " + interacoes);
-            req.getRequestDispatcher("serv1.java").forward(req, res);
+            req.getRequestDispatcher("serv2.java").forward(req, res);
 
         } else {
             System.out.println("Atingiu o limite de interações");
-            req.getRequestDispatcher("serv1.java").forward(req, res);
+            req.getRequestDispatcher("serv2.java").forward(req, res);
 
         }
     }
